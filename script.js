@@ -354,4 +354,39 @@
     });
   });
 
+  // ============================================
+  // REVIEWS CAROUSEL
+  // ============================================
+
+  const reviewsCarousel = document.querySelector('.reviews-carousel');
+
+  if (reviewsCarousel) {
+    const track = reviewsCarousel.querySelector('.reviews-carousel__track');
+    const slides = reviewsCarousel.querySelectorAll('.reviews-carousel__slide');
+    const dots = reviewsCarousel.querySelectorAll('.reviews-carousel__dot');
+    let currentSlide = 0;
+    const totalSlides = slides.length;
+
+    function goToSlide(index) {
+      currentSlide = index;
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('is-active', i === currentSlide);
+      });
+    }
+
+    function nextSlide() {
+      const next = (currentSlide + 1) % totalSlides;
+      goToSlide(next);
+    }
+
+    // Dot navigation
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => goToSlide(index));
+    });
+
+    // Auto-advance every 5 seconds
+    setInterval(nextSlide, 5000);
+  }
+
 })();
