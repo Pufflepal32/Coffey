@@ -26,8 +26,20 @@
         <ul class="header__nav-list">
           <li><a href="index.html" class="header__nav-link">Home</a></li>
           <li><a href="about.html" class="header__nav-link">About</a></li>
-          <li><a href="services.html" class="header__nav-link header__nav-link--dropdown is-active">Services <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></a></li>
-          <li><a href="locations.html" class="header__nav-link header__nav-link--dropdown">Locations <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></a></li>
+          <li class="header__nav-item--dropdown">
+            <a href="services.html" class="header__nav-link header__nav-link--dropdown is-active">Services <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></a>
+            <ul class="header__dropdown">
+              <li><a href="services.html#roofing" class="header__dropdown-link">Roofing Services</a></li>
+              <li><a href="services.html#gutters" class="header__dropdown-link">Seamless Gutters</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item--dropdown">
+            <a href="locations.html" class="header__nav-link header__nav-link--dropdown">Locations <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></a>
+            <ul class="header__dropdown">
+              <li><a href="locations.html#west-virginia" class="header__dropdown-link">West Virginia</a></li>
+              <li><a href="locations.html#virginia" class="header__dropdown-link">Virginia</a></li>
+            </ul>
+          </li>
           <li><a href="testimonials.html" class="header__nav-link">Testimonials</a></li>
           <li><a href="gallery.html" class="header__nav-link">Gallery</a></li>
           <li><a href="contact.html" class="header__nav-link">Contact</a></li>

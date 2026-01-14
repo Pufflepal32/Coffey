@@ -41,6 +41,56 @@
   }
 
   // ============================================
+  // DROPDOWN MENUS (Mobile click / Desktop hover)
+  // ============================================
+
+  const dropdownItems = document.querySelectorAll('.header__nav-item--dropdown');
+
+  dropdownItems.forEach(item => {
+    const link = item.querySelector('.header__nav-link--dropdown');
+
+    if (link) {
+      link.addEventListener('click', function(e) {
+        // Only handle click for mobile (under 992px)
+        if (window.innerWidth < 992) {
+          e.preventDefault();
+
+          // Close other dropdowns
+          dropdownItems.forEach(otherItem => {
+            if (otherItem !== item) {
+              otherItem.classList.remove('is-open');
+            }
+          });
+
+          // Toggle current dropdown
+          item.classList.toggle('is-open');
+        }
+      });
+    }
+  });
+
+  // Close dropdowns when clicking outside (mobile)
+  document.addEventListener('click', function(e) {
+    if (window.innerWidth < 992) {
+      const isClickInsideDropdown = e.target.closest('.header__nav-item--dropdown');
+      if (!isClickInsideDropdown) {
+        dropdownItems.forEach(item => {
+          item.classList.remove('is-open');
+        });
+      }
+    }
+  });
+
+  // Close dropdowns on window resize to desktop
+  window.addEventListener('resize', function() {
+    if (window.innerWidth >= 992) {
+      dropdownItems.forEach(item => {
+        item.classList.remove('is-open');
+      });
+    }
+  });
+
+  // ============================================
   // SMOOTH SCROLL
   // ============================================
 

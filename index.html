@@ -46,8 +46,20 @@
         <ul class="header__nav-list">
           <li><a href="index.html" class="header__nav-link is-active">Home</a></li>
           <li><a href="about.html" class="header__nav-link">About</a></li>
-          <li><a href="services.html" class="header__nav-link header__nav-link--dropdown">Services <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></a></li>
-          <li><a href="locations.html" class="header__nav-link header__nav-link--dropdown">Locations <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></a></li>
+          <li class="header__nav-item--dropdown">
+            <a href="services.html" class="header__nav-link header__nav-link--dropdown">Services <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></a>
+            <ul class="header__dropdown">
+              <li><a href="services.html#roofing" class="header__dropdown-link">Roofing Services</a></li>
+              <li><a href="services.html#gutters" class="header__dropdown-link">Seamless Gutters</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item--dropdown">
+            <a href="locations.html" class="header__nav-link header__nav-link--dropdown">Locations <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></a>
+            <ul class="header__dropdown">
+              <li><a href="locations.html#west-virginia" class="header__dropdown-link">West Virginia</a></li>
+              <li><a href="locations.html#virginia" class="header__dropdown-link">Virginia</a></li>
+            </ul>
+          </li>
           <li><a href="testimonials.html" class="header__nav-link">Testimonials</a></li>
           <li><a href="gallery.html" class="header__nav-link">Gallery</a></li>
           <li><a href="contact.html" class="header__nav-link">Contact</a></li>
@@ -120,55 +132,22 @@
       </div>
     </section>
 
-    <!-- Reviews Section -->
-    <section class="reviews-section">
+    <!-- Featured Review -->
+    <section class="featured-review">
       <div class="container">
-        <div class="reviews-carousel">
-          <div class="reviews-carousel__track">
-            <div class="reviews-carousel__slide">
-              <div class="review-card">
-                <div class="review-card__stars">★★★★★</div>
-                <p class="review-card__text">"I can NOT recommend Shawn enough! The professionalism & promptness is unmatched!! As a woman I get so nervous hiring contractors, but Shawn totally made me feel at ease."</p>
-                <div class="review-card__author">Sadie Marino</div>
-                <div class="review-card__location">West Virginia</div>
-              </div>
-              <div class="review-card">
-                <div class="review-card__stars">★★★★★</div>
-                <p class="review-card__text">"Coffey Roofing did an amazing job on our gutters. New black gutters look great!"</p>
-                <div class="review-card__author">Kim Shawn Coffey</div>
-                <div class="review-card__location">West Virginia</div>
-              </div>
-              <div class="review-card">
-                <div class="review-card__stars">★★★★★</div>
-                <p class="review-card__text">"Quick on response and did a nice job. They didn't throw trash all over the place and left the place the way they found it except with a fresh roof. No complaints."</p>
-                <div class="review-card__author">Ethan Kees</div>
-                <div class="review-card__location">West Virginia</div>
-              </div>
-            </div>
-            <div class="reviews-carousel__slide">
-              <div class="review-card">
-                <div class="review-card__stars">★★★★★</div>
-                <p class="review-card__text">"We were very happy to have someone come out with short notice. Thank you!"</p>
-                <div class="review-card__author">Brandy Sharritt</div>
-                <div class="review-card__location">Virginia</div>
-              </div>
-              <div class="review-card">
-                <div class="review-card__stars">★★★★★</div>
-                <p class="review-card__text">"Very professional, awesome work and great communication!!"</p>
-                <div class="review-card__author">Brock Justice</div>
-                <div class="review-card__location">West Virginia</div>
-              </div>
-              <div class="review-card">
-                <div class="review-card__stars">★★★★★</div>
-                <p class="review-card__text">"Best roofer in the area! Reasonable and affordable prices with excellent work! You will not be disappointed!!"</p>
-                <div class="review-card__author">Brittany Obitts</div>
-                <div class="review-card__location">West Virginia</div>
-              </div>
-            </div>
+        <div class="featured-review__inner">
+          <div class="featured-review__stars">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           </div>
-          <div class="reviews-carousel__dots">
-            <button class="reviews-carousel__dot is-active" data-slide="0"></button>
-            <button class="reviews-carousel__dot" data-slide="1"></button>
+          <p class="featured-review__text">"I can NOT recommend Shawn enough! The professionalism & promptness is unmatched!! As a woman I get so nervous hiring contractors, but Shawn totally made me feel at ease."</p>
+          <div class="featured-review__author">Sadie Marino</div>
+          <div class="featured-review__location">West Virginia</div>
+          <div class="featured-review__cta">
+            <a href="testimonials.html" class="btn btn--outline">Read More Reviews</a>
           </div>
         </div>
       </div>
@@ -264,8 +243,8 @@
     <section class="section section--gray">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-header__title">Complete Home Exterior Solutions</h2>
-          <p class="section-header__desc">From roof repairs to complete replacements and seamless gutter installation, we deliver quality workmanship on every project.</p>
+          <h2 class="section-header__title">Our Services</h2>
+          <p class="section-header__desc">Quality craftsmanship for every roofing and gutter need.</p>
         </div>
 
         <div class="services-grid">
@@ -273,48 +252,40 @@
             <div class="service-box__icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
             </div>
-            <h3>Roof Replacement</h3>
-            <p>Complete tear-off and installation of new roofing systems using quality materials.</p>
+            <div class="service-box__content">
+              <h3>Roof Replacement</h3>
+              <p>Protect your home for decades with a complete roof replacement using premium materials and expert installation.</p>
+            </div>
           </div>
 
           <div class="service-box">
             <div class="service-box__icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
             </div>
-            <h3>Roof Repairs</h3>
-            <p>Fast, reliable repairs for leaks, storm damage, and general wear and tear.</p>
+            <div class="service-box__content">
+              <h3>Roof Repairs</h3>
+              <p>Stop leaks fast and extend your roof's life with reliable repairs that address problems before they spread.</p>
+            </div>
           </div>
 
           <div class="service-box">
             <div class="service-box__icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
             </div>
-            <h3>Seamless Gutters</h3>
-            <p>Custom 5" & 6" seamless gutter installation that eliminates leaks.</p>
-          </div>
-
-          <div class="service-box">
-            <div class="service-box__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <div class="service-box__content">
+              <h3>Seamless Gutters</h3>
+              <p>Keep water away from your foundation with custom 5" & 6" seamless gutters that never leak at the seams.</p>
             </div>
-            <h3>Roof Inspections</h3>
-            <p>Thorough inspections to identify issues before they become costly problems.</p>
           </div>
 
           <div class="service-box">
             <div class="service-box__icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 16.9A5 5 0 0 0 18 7h-1.26a8 8 0 1 0-11.62 9"/><polyline points="13 11 9 17 15 17 11 23"/></svg>
             </div>
-            <h3>Storm Damage</h3>
-            <p>Emergency response for wind, hail, and storm damage restoration.</p>
-          </div>
-
-          <div class="service-box">
-            <div class="service-box__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            <div class="service-box__content">
+              <h3>Storm Damage</h3>
+              <p>Get your home secured quickly after severe weather with our emergency storm damage response services.</p>
             </div>
-            <h3>Gutter Repair</h3>
-            <p>Fix sagging, leaking, or damaged gutters to protect your foundation.</p>
           </div>
         </div>
 
@@ -325,88 +296,18 @@
     </section>
 
     <!-- CTA Band -->
-    <section class="cta-band cta-band--yellow">
+    <section class="cta-band cta-band--slate">
       <div class="container">
         <div class="cta-band__content">
           <h2 class="cta-band__title">Get Your Free Estimate Today</h2>
           <p class="cta-band__text">Call now for a free, no-obligation estimate. 15 years of experience, 100% satisfaction guaranteed.</p>
           <div class="cta-band__btns">
-            <a href="tel:540-550-4296" class="btn btn--dark btn--large">
+            <a href="tel:540-550-4296" class="btn btn--primary btn--large">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               Call 540-550-4296
             </a>
-            <a href="contact.html" class="btn btn--outline-dark btn--large">Request Free Estimate</a>
+            <a href="contact.html" class="btn btn--outline-light btn--large">Request Free Estimate</a>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-header__title">Customer Testimonials</h2>
-          <p class="section-header__desc">Real feedback from homeowners across West Virginia and Virginia who trusted us with their roofing projects.</p>
-        </div>
-
-        <div class="grid grid--3">
-          <div class="testimonial-card">
-            <div class="testimonial-card__stars">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <p class="testimonial-card__text">"Shawn and his team did an excellent job on our roof replacement. They were professional, on time, and the cleanup was spotless. Highly recommend!"</p>
-            <div class="testimonial-card__author">
-              <div class="testimonial-card__avatar">JM</div>
-              <div class="testimonial-card__info">
-                <strong>James M.</strong>
-                <span>Martinsburg, WV</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="testimonial-card__stars">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <p class="testimonial-card__text">"Got new seamless gutters installed. No more leaks! Fair price, great work, and Shawn was a pleasure to deal with. True no-hassle service."</p>
-            <div class="testimonial-card__author">
-              <div class="testimonial-card__avatar">ST</div>
-              <div class="testimonial-card__info">
-                <strong>Sarah T.</strong>
-                <span>Winchester, VA</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="testimonial-card__stars">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <p class="testimonial-card__text">"After storm damage, Shawn came out quickly for an inspection. He was honest about what needed repair vs. replacement. Saved us money and got the job done right."</p>
-            <div class="testimonial-card__author">
-              <div class="testimonial-card__avatar">RB</div>
-              <div class="testimonial-card__info">
-                <strong>Robert B.</strong>
-                <span>Charles Town, WV</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center mt-3">
-          <a href="testimonials.html" class="btn btn--outline">Read More Reviews</a>
         </div>
       </div>
     </section>
